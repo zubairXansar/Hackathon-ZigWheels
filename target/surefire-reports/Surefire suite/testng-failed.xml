@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.TC01_zigWheelsHomeTest">
+        <methods>
+          <include name="clickOnNewBikesTest"/>
+          <include name="clickGoogleLoginTest"/>
+          <include name="switchToLoginWindowTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="clickOnUpcomingBikesTest"/>
+          <include name="clickLoginTest"/>
+        </methods>
+      </class> <!-- testCases.TC01_zigWheelsHomeTest -->
+      <class name="testCases.TC04_googleLoginTest">
+        <methods>
+          <include name="clickOnNewBikesTest"/>
+          <include name="clickGoogleLoginTest"/>
+          <include name="navigateToHomeTest"/>
+          <include name="clickUsedCarsTest"/>
+          <include name="getPopularModelsTest"/>
+          <include name="tearDown"/>
+          <include name="verifyLocTest"/>
+          <include name="selectManufracturerTest"/>
+          <include name="verifyInputTest"/>
+          <include name="filterBikesTest"/>
+          <include name="selectLocationTest"/>
+          <include name="switchToLoginWindowTest"/>
+          <include name="setup"/>
+          <include name="emailInputTest"/>
+          <include name="clickOnUpcomingBikesTest"/>
+          <include name="clickLoginTest"/>
+        </methods>
+      </class> <!-- testCases.TC04_googleLoginTest -->
+      <class name="testCases.TC02_upcomingBikesTest">
+        <methods>
+          <include name="clickOnNewBikesTest"/>
+          <include name="clickGoogleLoginTest"/>
+          <include name="selectLocationTest"/>
+          <include name="clickUsedCarsTest"/>
+          <include name="selectManufracturerTest"/>
+          <include name="switchToLoginWindowTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="clickOnUpcomingBikesTest"/>
+          <include name="clickLoginTest"/>
+          <include name="filterBikesTest"/>
+        </methods>
+      </class> <!-- testCases.TC02_upcomingBikesTest -->
+      <class name="testCases.TC03_usedCarsTest">
+        <methods>
+          <include name="clickOnNewBikesTest"/>
+          <include name="clickGoogleLoginTest"/>
+          <include name="clickUsedCarsTest"/>
+          <include name="navigateToHomeTest"/>
+          <include name="getPopularModelsTest"/>
+          <include name="selectManufracturerTest"/>
+          <include name="tearDown"/>
+          <include name="verifyLocTest"/>
+          <include name="filterBikesTest"/>
+          <include name="selectLocationTest"/>
+          <include name="switchToLoginWindowTest"/>
+          <include name="setup"/>
+          <include name="clickOnUpcomingBikesTest"/>
+          <include name="clickLoginTest"/>
+        </methods>
+      </class> <!-- testCases.TC03_usedCarsTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
