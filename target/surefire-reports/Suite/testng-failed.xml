@@ -10,6 +10,7 @@
     <classes>
       <class name="testCases.TC04_googleLoginTest">
         <methods>
+          <include name="clickOnNewBikesTest"/>
           <include name="tearDown"/>
           <include name="selectManufracturerTest"/>
           <include name="setup"/>

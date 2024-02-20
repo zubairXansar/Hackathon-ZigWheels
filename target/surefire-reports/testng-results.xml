@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-05T18:10:26 IST" name="Suite" finished-at="2024-02-05T18:11:40 IST" duration-ms="74397">
+  <suite started-at="2024-02-12T12:20:21 IST" name="Suite" finished-at="2024-02-12T12:23:59 IST" duration-ms="218902">
     <groups>
       <group name="sanity,regression">
         <method signature="TC02_upcomingBikesTest.selectManufracturerTest()[pri:3, instance:testCases.TC04_googleLoginTest@6069db50]" name="selectManufracturerTest" class="testCases.TC02_upcomingBikesTest"/>
@@ -27,9 +27,9 @@
         <method signature="TC04_googleLoginTest.verifyInputTest()[pri:15, instance:testCases.TC04_googleLoginTest@6069db50]" name="verifyInputTest" class="testCases.TC04_googleLoginTest"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-02-05T18:10:26 IST" name="Test" finished-at="2024-02-05T18:11:40 IST" duration-ms="74397">
+    <test started-at="2024-02-12T12:20:21 IST" name="Test" finished-at="2024-02-12T12:23:59 IST" duration-ms="218902">
       <class name="testCases.TC04_googleLoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:10:26 IST" name="setup" finished-at="2024-02-05T18:10:57 IST" duration-ms="30570" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:20:21 IST" name="setup" finished-at="2024-02-12T12:21:07 IST" duration-ms="46126" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,63 +45,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickOnNewBikesTest()[pri:1, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:10:57 IST" name="clickOnNewBikesTest" finished-at="2024-02-05T18:11:00 IST" duration-ms="2942" status="PASS">
+        <test-method signature="clickOnNewBikesTest()[pri:1, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:21:07 IST" name="clickOnNewBikesTest" finished-at="2024-02-12T12:21:10 IST" duration-ms="2914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnNewBikesTest -->
-        <test-method signature="clickOnUpcomingBikesTest()[pri:2, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:00 IST" name="clickOnUpcomingBikesTest" finished-at="2024-02-05T18:11:02 IST" duration-ms="2057" status="PASS">
+        <test-method signature="clickOnUpcomingBikesTest()[pri:2, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:21:11 IST" name="clickOnUpcomingBikesTest" finished-at="2024-02-12T12:21:42 IST" duration-ms="31486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnUpcomingBikesTest -->
-        <test-method signature="selectManufracturerTest()[pri:3, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:03 IST" name="selectManufracturerTest" finished-at="2024-02-05T18:11:05 IST" duration-ms="2395" status="PASS">
+        <test-method signature="selectManufracturerTest()[pri:3, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:21:42 IST" name="selectManufracturerTest" finished-at="2024-02-12T12:22:28 IST" duration-ms="46096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectManufracturerTest -->
-        <test-method signature="filterBikesTest()[pri:4, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:06 IST" name="filterBikesTest" finished-at="2024-02-05T18:11:10 IST" duration-ms="4702" status="PASS">
+        <test-method signature="filterBikesTest()[pri:4, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:22:29 IST" name="filterBikesTest" finished-at="2024-02-12T12:22:35 IST" duration-ms="6752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterBikesTest -->
-        <test-method signature="clickUsedCarsTest()[pri:6, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:11 IST" name="clickUsedCarsTest" finished-at="2024-02-05T18:11:11 IST" duration-ms="194" status="PASS">
+        <test-method signature="clickUsedCarsTest()[pri:6, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:22:36 IST" name="clickUsedCarsTest" finished-at="2024-02-12T12:22:36 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickUsedCarsTest -->
-        <test-method signature="selectLocationTest()[pri:7, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:12 IST" name="selectLocationTest" finished-at="2024-02-05T18:11:21 IST" duration-ms="9501" status="PASS">
+        <test-method signature="selectLocationTest()[pri:7, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:22:36 IST" name="selectLocationTest" finished-at="2024-02-12T12:23:12 IST" duration-ms="36391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectLocationTest -->
-        <test-method signature="verifyLocTest()[pri:8, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:22 IST" name="verifyLocTest" finished-at="2024-02-05T18:11:22 IST" duration-ms="478" status="PASS">
+        <test-method signature="verifyLocTest()[pri:8, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:13 IST" name="verifyLocTest" finished-at="2024-02-12T12:23:13 IST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLocTest -->
-        <test-method signature="getPopularModelsTest()[pri:9, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:22 IST" name="getPopularModelsTest" finished-at="2024-02-05T18:11:23 IST" duration-ms="271" status="PASS">
+        <test-method signature="getPopularModelsTest()[pri:9, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:13 IST" name="getPopularModelsTest" finished-at="2024-02-12T12:23:14 IST" duration-ms="663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPopularModelsTest -->
-        <test-method signature="navigateToHomeTest()[pri:10, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:23 IST" name="navigateToHomeTest" finished-at="2024-02-05T18:11:31 IST" duration-ms="7612" status="PASS">
+        <test-method signature="navigateToHomeTest()[pri:10, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:14 IST" name="navigateToHomeTest" finished-at="2024-02-12T12:23:52 IST" duration-ms="38016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToHomeTest -->
-        <test-method signature="clickLoginTest()[pri:11, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:31 IST" name="clickLoginTest" finished-at="2024-02-05T18:11:32 IST" duration-ms="858" status="PASS">
+        <test-method signature="clickLoginTest()[pri:11, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:52 IST" name="clickLoginTest" finished-at="2024-02-12T12:23:53 IST" duration-ms="434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickLoginTest -->
-        <test-method signature="clickGoogleLoginTest()[pri:12, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:32 IST" name="clickGoogleLoginTest" finished-at="2024-02-05T18:11:33 IST" duration-ms="401" status="PASS">
+        <test-method signature="clickGoogleLoginTest()[pri:12, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:53 IST" name="clickGoogleLoginTest" finished-at="2024-02-12T12:23:53 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickGoogleLoginTest -->
-        <test-method signature="switchToLoginWindowTest()[pri:13, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:33 IST" name="switchToLoginWindowTest" finished-at="2024-02-05T18:11:36 IST" duration-ms="3072" status="PASS">
+        <test-method signature="switchToLoginWindowTest()[pri:13, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:54 IST" name="switchToLoginWindowTest" finished-at="2024-02-12T12:23:57 IST" duration-ms="3039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- switchToLoginWindowTest -->
-        <test-method signature="emailInputTest()[pri:14, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:36 IST" name="emailInputTest" finished-at="2024-02-05T18:11:37 IST" duration-ms="261" status="PASS">
+        <test-method signature="emailInputTest()[pri:14, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:57 IST" name="emailInputTest" finished-at="2024-02-12T12:23:57 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailInputTest -->
-        <test-method signature="verifyInputTest()[pri:15, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:37 IST" name="verifyInputTest" finished-at="2024-02-05T18:11:39 IST" duration-ms="1689" status="PASS">
+        <test-method signature="verifyInputTest()[pri:15, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:57 IST" name="verifyInputTest" finished-at="2024-02-12T12:23:58 IST" duration-ms="1203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInputTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-05T18:11:39 IST" name="tearDown" finished-at="2024-02-05T18:11:40 IST" duration-ms="1416" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC04_googleLoginTest@6069db50]" started-at="2024-02-12T12:23:58 IST" name="tearDown" finished-at="2024-02-12T12:23:59 IST" duration-ms="1151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -15,6 +15,7 @@ public class TC04_googleLoginTest extends TC03_usedCarsTest{
 	{
 		googleLogin gL = new googleLogin(driver);
 		gL.emailInput();
+		logger.info("Entered invalid email input.");
 	}
 	
 	
@@ -23,6 +24,7 @@ public class TC04_googleLoginTest extends TC03_usedCarsTest{
 	{
 		googleLogin gL = new googleLogin(driver);
 		Assert.assertEquals(gL.verifyInput(), true);
+		logger.info("Catch invalid input error");
 	}
 	
 }

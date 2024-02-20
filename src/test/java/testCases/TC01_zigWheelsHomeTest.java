@@ -17,6 +17,7 @@ public class TC01_zigWheelsHomeTest extends BaseClass{
 	{
 		zigWheelsHome zWH = new zigWheelsHome(driver);
 		zWH.clickOnNewBikes();
+		logger.info("Clicked on New Bikes.");
 	}
 	
 	@Test(priority=2,groups={"sanity"})
@@ -24,7 +25,7 @@ public class TC01_zigWheelsHomeTest extends BaseClass{
 	{
 		zigWheelsHome zWH = new zigWheelsHome(driver);
 		Assert.assertEquals(zWH.clickOnUpcomingBikes(), "Upcoming Bikes");
-		
+		logger.info("Clicked on Upcoming Bikes.");
 	}
 	
 	
@@ -33,6 +34,7 @@ public class TC01_zigWheelsHomeTest extends BaseClass{
 	{
 		zigWheelsHome zWH = new zigWheelsHome(driver);
 		zWH.clickLogin();
+		logger.info("Clicked on Login/SignUp.");
 	}
 	
 	
@@ -41,6 +43,7 @@ public class TC01_zigWheelsHomeTest extends BaseClass{
 	{
 		zigWheelsHome zWH = new zigWheelsHome(driver);
 		zWH.clickGoogleLogin();
+		logger.info("Clicked on login with Google.");
 	}
 	
 	
@@ -49,6 +52,7 @@ public class TC01_zigWheelsHomeTest extends BaseClass{
 	{
 		zigWheelsHome zWH = new zigWheelsHome(driver);
 		Assert.assertEquals(zWH.switchToLoginWindow(),"Sign in - Google Accounts");
+		logger.info("Switched focus to Login window.");
 	}
 	
 }

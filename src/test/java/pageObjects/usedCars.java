@@ -18,7 +18,7 @@ public class usedCars extends BasePage
 	}
 	
 	
-	String filepath = "C:\\Users\\2303569\\eclipse-workspace\\hackathonProject\\testData\\HackathonData.xlsx";
+	String filepath = "C:\\Users\\2303569\\eclipse-workspace\\hackathonProject\\testData\\hack.xlsx";
 	
 	//locators
 	@FindBy(xpath="//div[@class='gsc_thin_scroll']//li/label") 
@@ -30,6 +30,8 @@ public class usedCars extends BasePage
 	@FindBy(xpath="//div[@id='forum_login_div_lg']") 
 	WebElement loginButton;
 	
+	@FindBy(xpath="//a[@class='a']") 
+	WebElement scroll2;
 	
 	
 	//verifying elements
@@ -49,6 +51,7 @@ public class usedCars extends BasePage
 	public void getPopularModels() throws IOException
 	{
 		int j = 1;
+		scroll(scroll2);
 		System.out.println("Popular Models: ");
 		for(WebElement model:popularModels) {
 		System.out.println(model.getText());

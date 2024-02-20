@@ -37,7 +37,7 @@ public class BasePage {
 	public void scroll(WebElement toElement)
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView", toElement);
+		js.executeScript("arguments[0].scrollIntoView();", toElement);
 	}
 
 	

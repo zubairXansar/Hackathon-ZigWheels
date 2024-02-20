@@ -10,9 +10,22 @@
     <classes>
       <class name="testCases.TC04_googleLoginTest">
         <methods>
+          <include name="clickOnNewBikesTest"/>
+          <include name="clickGoogleLoginTest"/>
           <include name="getPopularModelsTest"/>
+          <include name="navigateToHomeTest"/>
+          <include name="clickUsedCarsTest"/>
           <include name="tearDown"/>
+          <include name="verifyLocTest"/>
+          <include name="selectManufracturerTest"/>
+          <include name="verifyInputTest"/>
+          <include name="filterBikesTest"/>
+          <include name="selectLocationTest"/>
+          <include name="switchToLoginWindowTest"/>
           <include name="setup"/>
+          <include name="clickOnUpcomingBikesTest"/>
+          <include name="emailInputTest"/>
+          <include name="clickLoginTest"/>
         </methods>
       </class> <!-- testCases.TC04_googleLoginTest -->
     </classes>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>edgeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 05 12:15:01 IST 2024</td>
+<td>Started on:</td><td>Thu Feb 15 23:52:03 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>144 seconds (144569 ms)</td>
+<tr><td>Total time:</td><td>75 seconds (75535 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC04_googleLoginTest.clickOnUpcomingBikesTest()'><b>clickOnUpcomingBikesTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=121.0.2277.98)
+<td title='testCases.TC04_googleLoginTest.selectManufracturerTest()'><b>selectManufracturerTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3c702af82b1acb498a846c8c5948c9e8, clickElement {id=374F4957B7A21DB1BAE971BFBD3C1F16_element_137}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61411}, msedge: {msedgedriverVersion: 121.0.2277.98 (a3414ba067bc..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61411/devtoo..., se:cdpVersion: 121.0.2277.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (3c702af82b1acb498a846c8c5948c9e8)] -&gt; xpath: //span[text()=&apos;Upcoming Bikes&apos;]]
-Session ID: 3c702af82b1acb498a846c8c5948c9e8
+Command: [6f13651ecf26c533ad7c10094b1e691b, isElementSelected {id=0E0E36FB52283E0148F4FFF787DE8743_element_223}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61334}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61334/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[EdgeDriver: MicrosoftEdge on windows (6f13651ecf26c533ad7c10094b1e691b)] -&gt; xpath: //select[@id=&apos;makeId&apos;]]] -&gt; xpath: .//option[normalize-space(.) = &quot;Honda&quot;]]
+Session ID: 6f13651ecf26c533ad7c10094b1e691b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -94,26 +95,27 @@ Session ID: 3c702af82b1acb498a846c8c5948c9e8
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pageObjects.zigWheelsHome.clickOnUpcomingBikes(zigWheelsHome.java:55)
-	at testCases.TC01_zigWheelsHomeTest.clickOnUpcomingBikesTest(TC01_zigWheelsHomeTest.java:26)
+	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:172)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:314)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+	at pageObjects.upcomingBikes.selectManufacturer(upcomingBikes.java:104)
+	at testCases.TC02_upcomingBikesTest.selectManufracturerTest(TC02_upcomingBikesTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace357846508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace357846508'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=121.0.2277.98)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332793127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332793127'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3c702af82b1acb498a846c8c5948c9e8, clickElement {id=374F4957B7A21DB1BAE971BFBD3C1F16_element_137}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61411}, msedge: {msedgedriverVersion: 121.0.2277.98 (a3414ba067bc..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61411/devtoo..., se:cdpVersion: 121.0.2277.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (3c702af82b1acb498a846c8c5948c9e8)] -&gt; xpath: //span[text()=&apos;Upcoming Bikes&apos;]]
-Session ID: 3c702af82b1acb498a846c8c5948c9e8
+Command: [6f13651ecf26c533ad7c10094b1e691b, isElementSelected {id=0E0E36FB52283E0148F4FFF787DE8743_element_223}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61334}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61334/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[EdgeDriver: MicrosoftEdge on windows (6f13651ecf26c533ad7c10094b1e691b)] -&gt; xpath: //select[@id=&apos;makeId&apos;]]] -&gt; xpath: .//option[normalize-space(.) = &quot;Honda&quot;]]
+Session ID: 6f13651ecf26c533ad7c10094b1e691b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -127,15 +129,11 @@ Session ID: 3c702af82b1acb498a846c8c5948c9e8
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at pageObjects.zigWheelsHome.clickOnUpcomingBikes(zigWheelsHome.java:55)
-	at testCases.TC01_zigWheelsHomeTest.clickOnUpcomingBikesTest(TC01_zigWheelsHomeTest.java:26)
+	at org.openqa.selenium.remote.RemoteWebElement.isSelected(RemoteWebElement.java:172)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:314)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+	at pageObjects.upcomingBikes.selectManufacturer(upcomingBikes.java:104)
+	at testCases.TC02_upcomingBikesTest.selectManufracturerTest(TC02_upcomingBikesTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,89 +157,42 @@ Session ID: 3c702af82b1acb498a846c8c5948c9e8
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>10</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
+<td>1</td>
+<td>testCases.TC04_googleLoginTest@70325e14</td></tr>
 <tr>
 <td title='testCases.TC04_googleLoginTest.filterBikesTest()'><b>filterBikesTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&quot;zw-cmn-loadMore&quot;]&quot;}
-  (Session info: MicrosoftEdge=121.0.2277.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3c702af82b1acb498a846c8c5948c9e8, findElement {using=xpath, value=//span[@class=&quot;zw-cmn-loadMore&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61411}, msedge: {msedgedriverVersion: 121.0.2277.98 (a3414ba067bc..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61411/devtoo..., se:cdpVersion: 121.0.2277.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c702af82b1acb498a846c8c5948c9e8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at pageObjects.upcomingBikes.filterBikes(upcomingBikes.java:71)
-	at testCases.TC02_upcomingBikesTest.filterBikesTest(TC02_upcomingBikesTest.java:25)
+<td><div><pre>org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:149)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:144)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:188)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:156)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:313)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:287)
+	at utilities.ExcelUtils.setcelldata(ExcelUtils.java:49)
+	at pageObjects.upcomingBikes.filterBikes(upcomingBikes.java:83)
+	at testCases.TC02_upcomingBikesTest.filterBikesTest(TC02_upcomingBikesTest.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74972713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace74972713'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&quot;zw-cmn-loadMore&quot;]&quot;}
-  (Session info: MicrosoftEdge=121.0.2277.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3c702af82b1acb498a846c8c5948c9e8, findElement {using=xpath, value=//span[@class=&quot;zw-cmn-loadMore&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61411}, msedge: {msedgedriverVersion: 121.0.2277.98 (a3414ba067bc..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61411/devtoo..., se:cdpVersion: 121.0.2277.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c702af82b1acb498a846c8c5948c9e8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:466)
-	at pageObjects.upcomingBikes.filterBikes(upcomingBikes.java:71)
-	at testCases.TC02_upcomingBikesTest.filterBikesTest(TC02_upcomingBikesTest.java:25)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace165501333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace165501333'><pre>org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:149)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:144)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:188)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:156)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:313)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:287)
+	at utilities.ExcelUtils.setcelldata(ExcelUtils.java:49)
+	at pageObjects.upcomingBikes.filterBikes(upcomingBikes.java:83)
+	at testCases.TC02_upcomingBikesTest.filterBikesTest(TC02_upcomingBikesTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,98 +216,8 @@ Session ID: 3c702af82b1acb498a846c8c5948c9e8
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>20</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.selectManufracturerTest()'><b>selectManufracturerTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;makeId&apos;]&quot;}
-  (Session info: MicrosoftEdge=121.0.2277.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3c702af82b1acb498a846c8c5948c9e8, findElement {using=xpath, value=//select[@id=&apos;makeId&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61411}, msedge: {msedgedriverVersion: 121.0.2277.98 (a3414ba067bc..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61411/devtoo..., se:cdpVersion: 121.0.2277.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c702af82b1acb498a846c8c5948c9e8
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:43)
-	at pageObjects.upcomingBikes.selectManufacturer(upcomingBikes.java:93)
-	at testCases.TC02_upcomingBikesTest.selectManufracturerTest(TC02_upcomingBikesTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace468789150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace468789150'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;makeId&apos;]&quot;}
-  (Session info: MicrosoftEdge=121.0.2277.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [3c702af82b1acb498a846c8c5948c9e8, findElement {using=xpath, value=//select[@id=&apos;makeId&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.98, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61411}, msedge: {msedgedriverVersion: 121.0.2277.98 (a3414ba067bc..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61411/devtoo..., se:cdpVersion: 121.0.2277.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c702af82b1acb498a846c8c5948c9e8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:43)
-	at pageObjects.upcomingBikes.selectManufacturer(upcomingBikes.java:93)
-	at testCases.TC02_upcomingBikesTest.selectManufracturerTest(TC02_upcomingBikesTest.java:18)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>20</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
+<td>3</td>
+<td>testCases.TC04_googleLoginTest@70325e14</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -367,60 +228,20 @@ Session ID: 3c702af82b1acb498a846c8c5948c9e8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC04_googleLoginTest.switchToLoginWindowTest()'><b>switchToLoginWindowTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>10</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.verifyInputTest()'><b>verifyInputTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.getPopularModelsTest()'><b>getPopularModelsTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.verifyLocTest()'><b>verifyLocTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.clickLoginTest()'><b>clickLoginTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.clickGoogleLoginTest()'><b>clickGoogleLoginTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.emailInputTest()'><b>emailInputTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>10</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.selectLocationTest()'><b>selectLocationTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>10</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
 <td title='testCases.TC04_googleLoginTest.clickOnNewBikesTest()'><b>clickOnNewBikesTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
 <td></td>
-<td>2</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
+<td>3</td>
+<td>testCases.TC04_googleLoginTest@70325e14</td></tr>
+<tr>
+<td title='testCases.TC04_googleLoginTest.clickOnUpcomingBikesTest()'><b>clickOnUpcomingBikesTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
+<td></td>
+<td>14</td>
+<td>testCases.TC04_googleLoginTest@70325e14</td></tr>
 <tr>
 <td title='testCases.TC04_googleLoginTest.clickUsedCarsTest()'><b>clickUsedCarsTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
 <td></td>
-<td>10</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
-<tr>
-<td title='testCases.TC04_googleLoginTest.navigateToHomeTest()'><b>navigateToHomeTest</b><br>Test class: testCases.TC04_googleLoginTest</td>
-<td></td>
-<td>8</td>
-<td>testCases.TC04_googleLoginTest@37ceb1df</td></tr>
+<td>0</td>
+<td>testCases.TC04_googleLoginTest@70325e14</td></tr>
 </table><p>
 </body>
 </html>

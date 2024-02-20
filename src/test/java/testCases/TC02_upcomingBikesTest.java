@@ -16,6 +16,7 @@ public class TC02_upcomingBikesTest extends TC01_zigWheelsHomeTest{
 	{
 		upcomingBikes uB = new  upcomingBikes(driver);
 		Assert.assertEquals(uB.selectManufacturer(), "Honda Bikes");
+		logger.info("Selected 'Honda' from dropdown.");
 	}
 	
 	@Test(priority=4,groups={"regression"})
@@ -23,6 +24,7 @@ public class TC02_upcomingBikesTest extends TC01_zigWheelsHomeTest{
 	{
 		 upcomingBikes uB = new upcomingBikes(driver);
 		uB.filterBikes();
+		logger.info("Upcoming Bike details filtered for price under 4 lakhs.");
 	}
 	
 	
@@ -31,6 +33,7 @@ public class TC02_upcomingBikesTest extends TC01_zigWheelsHomeTest{
 	{
 		upcomingBikes uB = new upcomingBikes(driver);
 		uB.clickUsedCars();
+		logger.info("Clicked on used cars");
 	}
 	
 	@Test(priority=7,groups={"regression"})
@@ -38,6 +41,7 @@ public class TC02_upcomingBikesTest extends TC01_zigWheelsHomeTest{
 	{
 		upcomingBikes uB = new upcomingBikes(driver);
 		uB.selectLocation();
+		logger.info("Clicked on Chennai location.");
 	}
 	
 

@@ -1,0 +1,21 @@
+10:34:16.041 [main] INFO  testCases.TC04_googleLoginTest - Getting popular models for used cars
+10:34:53.873 [main] INFO  testCases.TC04_googleLoginTest - Navigated back to homepage
+10:34:54.603 [main] INFO  testCases.TC04_googleLoginTest - Clicked on Login/SignUp.
+10:34:55.063 [main] INFO  testCases.TC04_googleLoginTest - Clicked on login with Google.
+10:34:58.399 [main] INFO  testCases.TC04_googleLoginTest - Switched focus to Login window.
+10:34:58.613 [main] INFO  testCases.TC04_googleLoginTest - Entered invalid email input.
+10:34:59.942 [main] INFO  testCases.TC04_googleLoginTest - Catch invalid input error
+09:56:34.521 [main] INFO  testCases.TC04_googleLoginTest - Clicked on New Bikes.
+09:56:36.727 [main] INFO  testCases.TC04_googleLoginTest - Clicked on Upcoming Bikes.
+09:56:44.692 [main] INFO  testCases.TC04_googleLoginTest - Selected 'Honda' from dropdown.
+09:56:57.209 [main] INFO  testCases.TC04_googleLoginTest - Upcoming Bike details filtered for price under 4 lakhs.
+09:56:57.931 [main] INFO  testCases.TC04_googleLoginTest - Clicked on used cars
+09:57:06.485 [main] INFO  testCases.TC04_googleLoginTest - Clicked on Chennai location.
+09:57:07.529 [main] INFO  testCases.TC04_googleLoginTest - Verified results as per location.
+09:57:09.381 [main] INFO  testCases.TC04_googleLoginTest - Getting popular models for used cars
+09:57:17.471 [main] INFO  testCases.TC04_googleLoginTest - Navigated back to homepage
+09:57:19.129 [main] INFO  testCases.TC04_googleLoginTest - Clicked on Login/SignUp.
+09:57:20.290 [main] INFO  testCases.TC04_googleLoginTest - Clicked on login with Google.
+09:57:23.848 [main] INFO  testCases.TC04_googleLoginTest - Switched focus to Login window.
+09:57:24.391 [main] INFO  testCases.TC04_googleLoginTest - Entered invalid email input.
+09:57:26.605 [main] INFO  testCases.TC04_googleLoginTest - Catch invalid input error

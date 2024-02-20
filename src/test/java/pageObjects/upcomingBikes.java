@@ -21,7 +21,7 @@ public class upcomingBikes extends BasePage
 		
 	}
 	
-	String filepath = "C:\\Users\\2303569\\eclipse-workspace\\hackathonProject\\testData\\HackathonData.xlsx";
+	String filepath = "C:\\Users\\2303569\\eclipse-workspace\\hackathonProject\\testData\\hack.xlsx";
 	
 	//locators
 	@FindBy(xpath="//select[@id='makeId']") 
@@ -48,6 +48,10 @@ public class upcomingBikes extends BasePage
 	@FindBy(xpath="//li/span[contains(text(),\"Chennai\")]")
 	WebElement locChennai;
 	
+	@FindBy(xpath="//h1[@class=\"mt-0 pt-2 pull-left zm-cmn-colorBlack\"]")
+	WebElement scroll1;
+	
+	
 	
 	
 //	//bikes
@@ -70,6 +74,7 @@ public class upcomingBikes extends BasePage
 	
 	public void filterBikes() throws InterruptedException, IOException{
 		
+		scroll(scroll1);
 		screenShot("Upcoming Honda Bikes");
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", viewMoreButton);

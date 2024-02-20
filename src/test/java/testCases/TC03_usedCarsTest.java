@@ -15,6 +15,7 @@ public class TC03_usedCarsTest extends TC02_upcomingBikesTest{
 	{
 		usedCars uC = new usedCars(driver);
 		Assert.assertEquals(uC.verifyLocation(),"Chennai");
+		logger.info("Verified results as per location.");
 	}
 	
 	
@@ -23,6 +24,7 @@ public class TC03_usedCarsTest extends TC02_upcomingBikesTest{
 	{
 		usedCars uC = new usedCars(driver);
 		uC.getPopularModels();
+		logger.info("Getting popular models for used cars");
 	}
 	
 	
@@ -31,6 +33,7 @@ public class TC03_usedCarsTest extends TC02_upcomingBikesTest{
 	{
 		usedCars uC = new usedCars(driver);
 		Assert.assertEquals(uC.navigateToHome(),true);
+		logger.info("Navigated back to homepage");
 	}
 
 }
